@@ -1,0 +1,16 @@
+{
+    "include": ["src/**/*.ts"],
+    "exclude": ["node_modules", "dist"],
+    "compilerOptions": {
+        "outDir": "dist",
+      "isolatedModules": true,
+      "esModuleInterop": true,
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "target": "ES2019",
+      "strict": true,
+      "declaration": true,
+      "incremental": true,
+      "skipLibCheck": true
+    }
+  }
