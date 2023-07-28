@@ -13,7 +13,7 @@
     "build:types": "tsc --emitDeclarationOnly",
     "build:minmodule": "terser dist/index.mjs -c -m -o dist/index.mjs",
     "build:mincommon": "terser dist/index.js -c -m -o dist/index.js",
-    "remove:builds": "find dist -type f ! -name '*.js' ! -name '*.mjs' ! -name '*.d.ts' -delete" 
+    "remove:builds": "find dist -type f ! -name '*.js' ! -name '*.mjs' ! -name '*.d.ts' -delete"
   },
   "files": [
     "dist/*.d.ts",
