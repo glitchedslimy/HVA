@@ -27,8 +27,6 @@ Or using Yarn:
 yarn add @slimy/hva
 ```
 
-**Note:** Yarn is yet to be supported.
-
 ## How to use it?
 
 **First of all, have in count two things, HVA doesn't support type safety right now, and it has been tested only in React and Svelte, is as simple as it can be.**
