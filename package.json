@@ -1,6 +1,6 @@
 {
   "name": "@slimy/hva",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Haruhi Variance Authority",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
