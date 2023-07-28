@@ -22,6 +22,11 @@ Or using Pnpm:
 ```bash
 pnpm install @slimy/hva
 ```
+Or using Yarn:
+```bash
+yarn add @slimy/hva
+```
+
 **Note:** Yarn is yet to be supported.
 
 ## How to use it?
