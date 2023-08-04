@@ -31,16 +31,20 @@ yarn add @slimy/hva
 
 **First of all, have in count two things, HVA doesn't support type safety right now, and it has been tested only in React and Svelte, is as simple as it can be.**
 
+Now, you can add **default styles to the components**.
+
 ### React
 ```jsx
 import hva from '@slimy/hva';
 
 const button = hva({
+   variants: {
     intent: {
-        primary: [styles]
+      primary: [styles]
     }
+    } 
     // You can add other styles here as well
-})
+}, [defaultStyles]) // Default styles are not required
 
 export function Button({intent, className, ...props}) {
     return <button className={button({intent, className})}>Click me</button>
@@ -55,10 +59,12 @@ import hva from '@slimy/hva'
   export let intent: 'primary' | 'secondary' = 'primary';
   
   const styles = hva({
+    variants: {
     intent: {
       primary: [styles]
+    }
     }  
-  });
+  }, [defaultStyles]) // Default styles are not required;
 
   $: haru = `${styles({ intent, class: $$props.class })}`;
 </script>
