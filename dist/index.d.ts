@@ -1,4 +1,4 @@
-type StyleObject = {
+type Variants = {
     [key: string]: {
         [key: string]: string[];
     };
@@ -6,5 +6,7 @@ type StyleObject = {
 type PropertyMap = {
     [key: string]: string;
 };
-export default function hva(styles: StyleObject): (propertyMap: PropertyMap) => string;
+export default function hva(variants: {
+    variants: Variants;
+}, defaultStyles?: string[]): (propertyMap: PropertyMap) => string;
 export {};
